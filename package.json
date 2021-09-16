@@ -1,0 +1,15 @@
+{
+  "name": "js-linguilint",
+  "version": "0.1.0",
+  "description": "A tool to help you put more meaning in your code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/**/*.test.js && gittey commit"
+  },
+  "author": "Chris Stead",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  }
+}
