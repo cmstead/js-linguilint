@@ -14,6 +14,7 @@ function lastChar(token) {
 function isCaptialized(character) {
     return character !== character.toLowerCase()
 }
+
 function tokenize(variableName) {
     let tokens = [];
     let currentToken = '';
@@ -21,7 +22,10 @@ function tokenize(variableName) {
     const updateTokens = buildTokenUpdater(tokens);
 
     variableName.split('').forEach(function (character, index) {
-        if (
+        if (character === '_') {
+            updateTokens(currentToken);
+            currentToken = '';
+        } else if (
             isCaptialized(character) 
             && (!isCaptialized(lastChar(currentToken))
             || !isCaptialized(variableName[index + 1]))

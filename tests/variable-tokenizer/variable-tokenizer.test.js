@@ -28,4 +28,13 @@ describe('Variable tokenizer', function () {
 
         assert.deepEqual(variableTokens, resultTokens);
     });
+
+    it('returns an array of tokens when a variable contains an underscore', function () {
+        const variableName = 'SCUBAIs_AnAcronym';
+        const variableTokens = ['scuba', 'is', 'an', 'acronym'];
+
+        const resultTokens = tokenize(variableName);
+
+        assert.deepEqual(variableTokens, resultTokens);
+    });
 });
