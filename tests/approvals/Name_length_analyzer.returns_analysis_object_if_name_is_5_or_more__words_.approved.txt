@@ -1,0 +1,27 @@
+{
+  "location": {
+    "end": {
+      "column": 39,
+      "line": 3
+    },
+    "start": {
+      "column": 4,
+      "line": 3
+    }
+  },
+  "message": "Name thisNameIsTooLongAndShouldBeFlagged is 9 words long, perhaps a rename or context change would help",
+  "node": {
+    "loc": {
+      "end": {
+        "column": 39,
+        "line": 3
+      },
+      "start": {
+        "column": 4,
+        "line": 3
+      }
+    },
+    "name": "thisNameIsTooLongAndShouldBeFlagged",
+    "type": "Identifier"
+  }
+}
