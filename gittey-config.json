@@ -23,6 +23,15 @@
             "***": "Does not compile -- intermediate step"
         }
     },
-    "aliases": [],
+    "aliases": [
+        {
+            "name": "pull",
+            "command": "gittey commit; git pull"
+        },
+        {
+            "name": "push",
+            "command": "gittey pull; git push"
+        }
+    ],
     "collaborators": []
 }
