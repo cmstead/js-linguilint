@@ -19,4 +19,13 @@ describe('Variable tokenizer', function () {
 
         assert.deepEqual(variableTokens, resultTokens);
     });
+
+    it('returns an array containing an acronym', function () {
+        const variableName = 'SCUBAIsAnAcronym';
+        const variableTokens = ['scuba', 'is', 'an', 'acronym'];
+
+        const resultTokens = tokenize(variableName);
+
+        assert.deepEqual(variableTokens, resultTokens);
+    });
 });
